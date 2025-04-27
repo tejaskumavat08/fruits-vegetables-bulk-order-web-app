@@ -1,73 +1,52 @@
-# Welcome to your Lovable project
+# 🥦 Bulk Vegetable/Fruit Ordering Platform
 
-## Project info
+A web app to browse, order, and track bulk vegetable/fruit purchases. Admins can manage products and order statuses.  
+Built with **Next.js**, **PostgreSQL**, and deployed on **Vercel**.
 
-**URL**: https://lovable.dev/projects/808917a0-88f8-4d74-b104-252a5151dd77
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+### Buyers
+- Browse product catalog
+- Place bulk orders with delivery details
+- Track order status (Pending, In Progress, Delivered)
 
-**Use Lovable**
+### Admins
+- Manage orders and update status
+- Add, edit, delete products
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/808917a0-88f8-4d74-b104-252a5151dd77) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+- **Frontend**: Next.js
+- **Backend**: Next.js API Routes
+- **Hosting**: Vercel
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📄 API Endpoints
 
-Follow these steps:
+- `GET /api/products` – Get products
+- `POST /api/orders` – Place order
+- `GET /api/orders/:id` – Check order status
+- `PUT /api/admin/orders/:id` – Update order
+- `POST/PUT/DELETE /api/admin/products` – Manage products
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📋 Setup
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+git clone https://github.com/your-username/bulk-ordering-platform.git
+cd bulk-ordering-platform
+npm install
+cp .env.example .env.local
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📢 Submission
+GitHub Repo: https://github.com/tejaskumavat08/fruits-vegetables-bulk-order-web-app.git
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/808917a0-88f8-4d74-b104-252a5151dd77) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Live App: https://fruits-vegetables-bulk-order-web-app.vercel.app/
